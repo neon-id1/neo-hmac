@@ -1,0 +1,11 @@
+{
+  "name": "neo-hmac",
+  "version": "1.0.0",
+  "description": "NEON library to create HMAC signature",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dev@vortex.so",
+  "license": "ISC"
+}
