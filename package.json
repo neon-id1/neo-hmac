@@ -1,6 +1,6 @@
 {
   "name": "hmac-http-signature",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "NEON library to create HMAC signature",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
