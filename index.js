@@ -25,7 +25,10 @@ class HMACSignature {
     async createSignature(request, APIContext) {
         try {
             const ts = new Date()
-            return this._createHash(request, APIContext, ts)
+            return {
+                signature: this._createHash(request, APIContext, ts),
+                timestamp: ts
+            }
         } catch (error) {
             console.log(error)
             return null
