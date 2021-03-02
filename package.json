@@ -1,5 +1,5 @@
 {
-  "name": "neo-hmac",
+  "name": "hmac-http-signature",
   "version": "1.0.0",
   "description": "NEON library to create HMAC signature",
   "main": "index.js",
@@ -8,5 +8,8 @@
   },
   "author": "dev@vortex.so",
   "license": "ISC",
-  "repository": "https://github.com/neon-id1/neo-hmac.git"
+  "repository": "https://github.com/neon-id1/neo-hmac.git",
+  "dependencies": {
+    "crypto-js": "^4.0.0"
+  }
 }
