@@ -9,7 +9,5 @@
   "author": "dev@vortex.so",
   "license": "ISC",
   "repository": "https://github.com/neon-id1/neo-hmac.git",
-  "dependencies": {
-    "crypto-js": "^4.0.0"
-  }
+  "dependencies": {}
 }

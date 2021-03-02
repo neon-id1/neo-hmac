@@ -1,4 +1,3 @@
-const MD5 = require('crypto-js/md5')
 const crypto = require('crypto')
 
 class HMACSignature {
@@ -6,7 +5,7 @@ class HMACSignature {
         const { body, method } = request
         const js = JSON.stringify(body)
         const jsc =  js.replace(/\s+/g, '')
-        const MD5jsc = MD5(jsc).toString()
+        const MD5jsc = crypto.createHash('md5').update(jsc).digest("hex");
         const rw = `${timestamp}:${APIContext.key}:${method}:${MD5jsc}`
         return crypto.createHmac('sha256', APIContext.secret).update(rw).digest('base64')
     }
