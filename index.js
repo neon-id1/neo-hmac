@@ -10,7 +10,7 @@ class HMACSignature {
         return crypto.createHmac('sha256', APIContext.secret).update(rw).digest('base64')
     }
 
-    async validate(request, APIContext) {
+    validate(request, APIContext) {
         try {
             const { headers } = request
             const ts = new Date(headers.timestamp)
@@ -22,7 +22,7 @@ class HMACSignature {
         }
     }
 
-    async createSignature(request, APIContext) {
+    createSignature(request, APIContext) {
         try {
             const ts = new Date()
             return {
