@@ -15,7 +15,7 @@ export function validate(input: Input) {
         const { headers } = input.request
         const ts = new Date(headers.timestamp as string)
         const hash = _createHash(input.request, input.APIContext, ts)
-        return hash === headers.hash;
+        return hash === headers.signature;
     } catch (error) {
         console.log(error)
         return false
